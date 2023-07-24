@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mynodejs
+  name: nodejs
   labels:
-    app: mynodejs
+    app: nodejs
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: thiernosmynodejs
+      app: nodejs
   template:
     metadata:
       labels:
-        app: mynodejs
+        app: nodejs
     spec:
       containers:
         - name: thiernos
