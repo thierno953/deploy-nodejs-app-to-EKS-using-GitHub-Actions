@@ -8,15 +8,15 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nodejs
+      app: poukalnodejs
   template:
     metadata:
       labels:
         app: nodejs
     spec:
       containers:
-        - name: devopshint
-          image: 908198849120.dkr.ecr.ap-south-1.amazonaws.com/devopshint:1.1
+        - name: poukal
+          image: 223273133675.dkr.ecr.eu-west-3.amazonaws.com/poukal:1.1
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
